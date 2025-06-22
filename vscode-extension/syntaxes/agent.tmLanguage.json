@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Agent",
+  "patterns": [
+    {
+      "include": "#frontmatter"
+    },
+    {
+      "include": "#markdown"
+    }
+  ],
+  "repository": {
+    "frontmatter": {
+      "begin": "^(---)\\s*$",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.frontmatter.begin.agent"
+        }
+      },
+      "end": "^(---)\\s*$",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.frontmatter.end.agent"
+        }
+      },
+      "name": "meta.frontmatter.agent",
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ]
+    },
+    "markdown": {
+      "patterns": [
+        {
+          "include": "text.html.markdown"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.agent"
+}

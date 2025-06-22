@@ -1,0 +1,29 @@
+{
+  "name": "agent-files",
+  "displayName": "Agent Files",
+  "description": "Syntax highlighting and support for .agent files",
+  "version": "0.1.0",
+  "publisher": "nikbrazley",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [{
+      "id": "agent",
+      "aliases": ["Agent", "agent"],
+      "extensions": [".agent"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "agent",
+      "scopeName": "source.agent",
+      "path": "./syntaxes/agent.tmLanguage.json"
+    }],
+    "iconThemes": [{
+      "id": "agent-icon-theme",
+      "label": "Agent Icons",
+      "path": "./fileicons/agent-icon-theme.json"
+    }]
+  }
+}

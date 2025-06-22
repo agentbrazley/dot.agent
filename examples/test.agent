@@ -1,0 +1,26 @@
+---
+agent:
+  name: "Test Agent"
+  version: "1.0.0"
+  description: "A test agent to verify file type registration"
+  capabilities: ["testing", "validation"]
+---
+
+# Test Agent
+
+This is a test agent file to verify that:
+
+1. The file extension is recognized
+2. Syntax highlighting works
+3. The frontmatter is valid
+4. The CLI tools can parse it
+
+## Testing Commands
+
+```bash
+# Validate this file
+agent-lint validate test.agent
+
+# Get info about this agent
+agent-lint info test.agent
+```
