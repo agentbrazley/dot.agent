@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Built files
+dist/
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
