@@ -1,0 +1,6 @@
+import { MeiliSearchError } from './meilisearch-error';
+declare class MeiliSearchTimeOutError extends MeiliSearchError {
+    constructor(message: string);
+}
+export { MeiliSearchTimeOutError };
+//# sourceMappingURL=meilisearch-timeout-error.d.ts.map

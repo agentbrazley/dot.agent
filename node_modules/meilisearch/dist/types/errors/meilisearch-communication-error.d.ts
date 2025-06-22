@@ -1,0 +1,11 @@
+import { FetchError } from '../types';
+import { MeiliSearchError } from './meilisearch-error';
+declare class MeiliSearchCommunicationError extends MeiliSearchError {
+    statusCode?: number;
+    errno?: string;
+    code?: string;
+    stack?: string;
+    constructor(message: string, body: Response | FetchError, url?: string, stack?: string);
+}
+export { MeiliSearchCommunicationError };
+//# sourceMappingURL=meilisearch-communication-error.d.ts.map

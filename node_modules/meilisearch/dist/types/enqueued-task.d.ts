@@ -1,0 +1,11 @@
+import { EnqueuedTaskObject } from './types';
+declare class EnqueuedTask {
+    taskUid: EnqueuedTaskObject['taskUid'];
+    indexUid: EnqueuedTaskObject['indexUid'];
+    status: EnqueuedTaskObject['status'];
+    type: EnqueuedTaskObject['type'];
+    enqueuedAt: Date;
+    constructor(task: EnqueuedTaskObject);
+}
+export { EnqueuedTask };
+//# sourceMappingURL=enqueued-task.d.ts.map

@@ -1,0 +1,19 @@
+/// <reference types="node" />
+import { MeiliSearchErrorInfo } from '../types';
+declare const MeiliSearchApiError: {
+    new (error: MeiliSearchErrorInfo, status: number): {
+        httpStatus: number;
+        code: string;
+        link: string;
+        type: string;
+        stack?: string | undefined;
+        name: string;
+        message: string;
+        cause?: unknown;
+    };
+    captureStackTrace(targetObject: object, constructorOpt?: Function | undefined): void;
+    prepareStackTrace?: ((err: Error, stackTraces: NodeJS.CallSite[]) => any) | undefined;
+    stackTraceLimit: number;
+};
+export { MeiliSearchApiError };
+//# sourceMappingURL=meilisearch-api-error.d.ts.map

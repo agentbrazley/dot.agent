@@ -1,0 +1,7 @@
+import { Config } from '../types';
+import { Client } from './client';
+declare class MeiliSearch extends Client {
+    constructor(config: Config);
+}
+export { MeiliSearch };
+//# sourceMappingURL=browser-client.d.ts.map
