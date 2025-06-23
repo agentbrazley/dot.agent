@@ -287,7 +287,7 @@ class VersionManager {
 
 ### Optional Fields
 
-See the [agent_frontmatter_schema.md]((https://github.com/agentbrazley/dot.agent/blob/v1.0.1/docs/schema.md)) for complete field documentation.
+See the [agent_frontmatter_schema.md](https://github.com/agentbrazley/dot.agent/blob/v1.0.1/docs/schema.md) for complete field documentation.
 
 ## Development
 
